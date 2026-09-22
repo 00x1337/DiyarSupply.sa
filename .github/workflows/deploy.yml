@@ -41,6 +41,6 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            sudo rsync -a --delete /home/ubuntu/DiyarSupply.sa-temp/ /home/diyar/htdocs/DiyarSupply.sa/
-            sudo chown -R diyar:diyar /home/diyar/htdocs/DiyarSupply.sa/
+            sudo rsync -a --delete /home/ubuntu/DiyarSupply.sa-temp/ /home/diyar/htdocs/diyarsupply.sa/
+            sudo chown -R diyar:diyar /home/diyar/htdocs/diyarsupply.sa/
             rm -rf /home/ubuntu/DiyarSupply.sa-temp/
