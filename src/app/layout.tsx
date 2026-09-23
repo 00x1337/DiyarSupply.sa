@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "شركة تموين الديار",
-  description: "الموقع الرسمي لـ شركة تموين الديار",
+  title: "شركة وائل رشيدي لخدمات الإعاشة والتموين (تموين الديار) | Wael Rasheedi Catering",
+  description: "شركة وائل رشيدي لخدمات الإعاشة والتموين - ريادة إطعام ضيوف الرحمن منذ 2007م، تشغيل مطابخ وبوفيهات مفتوحة للحجاج والمعتمرين بمكة والمشاعر المقدسة. معتمدة بشهادات ISO 45001 و HACCP.",
 };
 
 export default function RootLayout({
@@ -15,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
-      <body className={inter.className}>{children}</body>
+    <html lang="ar" dir="rtl" className="scroll-smooth">
+      <body className={`${cairo.className} bg-slate-900 text-slate-100 antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
