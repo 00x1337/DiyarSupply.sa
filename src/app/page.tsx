@@ -220,16 +220,9 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-brand-100 bg-white/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-4 sm:h-20 sm:px-6 lg:px-8">
           {/* Logo */}
-          <a href="#top" className="flex shrink-0 items-center gap-3">
+          <a href="#top" className="flex shrink-0 items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="تموين الديار" className="h-11 w-auto sm:h-13" />
-            <span className="hidden h-10 w-px bg-brand-100 sm:block" />
-            <span className="hidden leading-tight sm:block">
-              <span className="block text-[15px] font-extrabold text-brand-600">شركة وائل رشيدي</span>
-              <span className="block text-[11px] font-semibold tracking-wide text-brand-600">
-                لخدمات الإعاشة والتموين
-              </span>
-            </span>
+            <img src="/logo.png" alt="تموين الديار" className="h-11 w-auto sm:h-14" />
           </a>
 
           {/* Links */}
