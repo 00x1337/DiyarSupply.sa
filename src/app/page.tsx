@@ -179,7 +179,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<Meal>("lunch");
 
   return (
-    <div className="min-h-screen bg-white text-brand-950 selection:bg-accent-500 selection:text-brand-950">
+    <div className="min-h-screen bg-white text-brand-600 selection:bg-accent-500 selection:text-brand-600">
       {/* Top Banner */}
       <div className="bg-brand-800 text-brand-50">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-[11px] font-semibold sm:px-6 sm:text-xs lg:px-8">
@@ -225,7 +225,7 @@ export default function Home() {
             <img src="/logo.png" alt="تموين الديار" className="h-11 w-auto sm:h-13" />
             <span className="hidden h-10 w-px bg-brand-100 sm:block" />
             <span className="hidden leading-tight sm:block">
-              <span className="block text-[15px] font-extrabold text-brand-950">شركة وائل رشيدي</span>
+              <span className="block text-[15px] font-extrabold text-brand-600">شركة وائل رشيدي</span>
               <span className="block text-[11px] font-semibold tracking-wide text-brand-600">
                 لخدمات الإعاشة والتموين
               </span>
@@ -238,7 +238,7 @@ export default function Home() {
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-lg px-3 py-2 text-sm font-bold text-brand-900/75 transition hover:bg-brand-50 hover:text-brand-700"
+                className="rounded-lg px-3 py-2 text-sm font-bold text-brand-700 transition hover:bg-brand-50 hover:text-brand-700"
               >
                 {link.label}
               </a>
@@ -248,7 +248,7 @@ export default function Home() {
           {/* Action CTA */}
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-5 py-2.5 text-sm font-extrabold text-brand-950 shadow-lg shadow-accent-500/25 transition hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-5 py-2.5 text-sm font-extrabold text-brand-600 shadow-lg shadow-accent-500/25 transition hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
           >
             <span className="hidden sm:inline">طلب عروض الكاترينج</span>
             <span className="sm:hidden">طلب عرض</span>
@@ -260,7 +260,7 @@ export default function Home() {
         <div className="border-t border-brand-100 lg:hidden">
           <nav
             aria-label="القائمة الرئيسية (الجوال)"
-            className="mx-auto flex max-w-7xl items-center gap-1 overflow-x-auto px-3 py-2 text-[13px] font-bold text-brand-900/75 [scrollbar-width:none]"
+            className="mx-auto flex max-w-7xl items-center gap-1 overflow-x-auto px-3 py-2 text-[13px] font-bold text-brand-700 [scrollbar-width:none]"
           >
             {navLinks.map((link) => (
               <a
@@ -285,17 +285,17 @@ export default function Home() {
 
           <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-24 lg:pt-20">
             <div className="mx-auto max-w-4xl space-y-6 text-center">
-              <div className="inline-flex items-center gap-2 rounded-full border border-accent-200 bg-accent-50 px-4 py-1.5 text-xs font-bold text-accent-800 sm:text-sm">
+              <div className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-1.5 text-xs font-bold text-brand-700 sm:text-sm">
                 <span className="h-2 w-2 rounded-full bg-accent-500" />
                 من المطبخ إلى الريادة • خبرة تتجاوز 17 عاماً في العاصمة المقدسة
               </div>
 
-              <h1 className="text-4xl font-black leading-[1.15] tracking-tight text-brand-950 sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-black leading-[1.15] tracking-tight text-brand-600 sm:text-5xl lg:text-6xl">
                 الطعام ليس مجرد وجبة بل{" "}
-                <span className="text-accent-600">تجربة نكهة وضيافة راقية</span>
+                تجربة نكهة وضيافة راقية
               </h1>
 
-              <p className="mx-auto max-w-3xl text-base leading-relaxed text-brand-900/70 sm:text-lg">
+              <p className="mx-auto max-w-3xl text-base leading-relaxed text-brand-700 sm:text-lg">
                 تأسست شركة وائل رشيدي لخدمات الإعاشة والتموين في المملكة منذ عام 2007م لتوفير أفضل الوجبات
                 المطهية والجافة وبوفيهات الـ VIP المفتوحة لبعثات الحج الرسمية والشركات والمناسبات الكبرى بمكة
                 المكرمة والمشاعر المقدسة.
@@ -304,14 +304,14 @@ export default function Home() {
               <div className="flex flex-wrap justify-center gap-3 pt-2">
                 <a
                   href="#menus"
-                  className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-brand-950 shadow-xl shadow-accent-500/25 transition hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-brand-600 shadow-xl shadow-accent-500/25 transition hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
                 >
                   تصفح قوائم الطعام
                   <Arrow />
                 </a>
                 <a
                   href="#letters"
-                  className="inline-flex items-center gap-2 rounded-xl border border-brand-200 bg-white px-7 py-3.5 text-sm font-bold text-brand-800 shadow-sm transition hover:border-brand-300 hover:bg-brand-50"
+                  className="inline-flex items-center gap-2 rounded-xl border border-brand-200 bg-white px-7 py-3.5 text-sm font-bold text-brand-600 shadow-sm transition hover:border-brand-300 hover:bg-brand-50"
                 >
                   شهادات شكر البعثات الدولية
                 </a>
@@ -331,7 +331,7 @@ export default function Home() {
                       <span className="ms-1.5 text-lg font-extrabold text-brand-500 sm:text-xl">{stat.unit}</span>
                     )}
                   </span>
-                  <span className="mt-1 block text-[11px] font-semibold text-brand-900/60 sm:text-xs">
+                  <span className="mt-1 block text-[11px] font-semibold text-brand-600/85 sm:text-xs">
                     {stat.label}
                   </span>
                 </div>
@@ -348,16 +348,16 @@ export default function Home() {
                 <span className="inline-block rounded-md border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-bold text-brand-700">
                   من نحن • Who We Are
                 </span>
-                <h2 className="text-3xl font-black leading-tight text-brand-950 sm:text-4xl">
+                <h2 className="text-3xl font-black leading-tight text-brand-600 sm:text-4xl">
                   شغف بالضيافة واهتمام فائق بأدق تفاصيل الجودة
                 </h2>
-                <p className="text-sm leading-relaxed text-brand-900/70 sm:text-base">
+                <p className="text-sm leading-relaxed text-brand-700 sm:text-base">
                   نحن شركة وائل رشيدي لخدمات الإعاشة بالحج والعمرة، نؤمن بأن الطعام ليس مجرد وجبة، بل تجربة
                   متكاملة من النكهة والجودة والتقديم الراقي. تأسست شركتنا في المملكة العربية السعودية منذ عام
                   2007م لتقديم خدمات التغذية للحجاج والمعتمرين والمدارس والفعاليات الرسمية بمكة المكرمة
                   والمشاعر المقدسة.
                 </p>
-                <p className="text-sm leading-relaxed text-brand-900/70 sm:text-base">
+                <p className="text-sm leading-relaxed text-brand-700 sm:text-base">
                   تدار الشركة بإشراف مباشر مع فريق من كوكبة الشباب السعودي المؤهل، ونخبة من الطهاة المحترفين
                   من دول جنوب وجنوب شرق آسيا والدول العربية، مع أسطول متكامل لنقل وتوزيع الوجبات والبوفيهات
                   في الوقت المحدد.
@@ -365,21 +365,21 @@ export default function Home() {
 
                 <div className="grid gap-4 pt-2 sm:grid-cols-2">
                   <div className="rounded-2xl border border-brand-100 bg-brand-50/70 p-5">
-                    <h4 className="mb-1 flex items-center gap-2 font-bold text-brand-800">
+                    <h4 className="mb-1 flex items-center gap-2 font-bold text-brand-600">
                       <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
                       الرؤية الاستراتيجية
                     </h4>
-                    <p className="text-xs leading-relaxed text-brand-900/65">
+                    <p className="text-xs leading-relaxed text-brand-700/80">
                       أن نكون الشركة الرائدة في مجال إنتاج الطعام وتقديم خدمات التموين والضيافة في منطقتنا بما
                       يتلائم مع أعلى المعايير والمقاييس العالمية.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-brand-100 bg-brand-50/70 p-5">
-                    <h4 className="mb-1 flex items-center gap-2 font-bold text-brand-800">
+                    <h4 className="mb-1 flex items-center gap-2 font-bold text-brand-600">
                       <span className="h-1.5 w-1.5 rounded-full bg-accent-500" />
                       رسالتنا
                     </h4>
-                    <p className="text-xs leading-relaxed text-brand-900/65">
+                    <p className="text-xs leading-relaxed text-brand-700/80">
                       العمل لإرساء معايير جديدة لإنتاج الأغذية وتقديم خدمات الضيافة من خلال نخبة من الكفاءات
                       الطموحة لنؤسس لشراكات طويلة الأمد مع عملائنا.
                     </p>
@@ -395,8 +395,8 @@ export default function Home() {
                     className="rounded-2xl border border-brand-100 bg-white p-5 text-center shadow-sm shadow-brand-900/5 transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md"
                   >
                     <span className="block text-3xl">{value.icon}</span>
-                    <h4 className="mt-2 text-sm font-extrabold text-brand-950">{value.title}</h4>
-                    <p className="mt-1 text-[11px] leading-relaxed text-brand-900/60">{value.text}</p>
+                    <h4 className="mt-2 text-sm font-extrabold text-brand-600">{value.title}</h4>
+                    <p className="mt-1 text-[11px] leading-relaxed text-brand-600/85">{value.text}</p>
                   </div>
                 ))}
               </div>
@@ -408,9 +408,9 @@ export default function Home() {
         <section id="services" className="scroll-mt-24 bg-brand-50 py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto mb-14 max-w-3xl space-y-3 text-center">
-              <span className="text-xs font-bold uppercase tracking-wider text-accent-600">نطاق الخدمات</span>
-              <h2 className="text-3xl font-black text-brand-950 sm:text-4xl">خدمات الضيافة والتموين الشاملة</h2>
-              <p className="text-sm text-brand-900/60">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-500">نطاق الخدمات</span>
+              <h2 className="text-3xl font-black text-brand-600 sm:text-4xl">خدمات الضيافة والتموين الشاملة</h2>
+              <p className="text-sm text-brand-600/85">
                 حلول مصممة لتلبية احتياجات الشركات والبعثات والاحتفالات الخاصة:
               </p>
             </div>
@@ -428,8 +428,8 @@ export default function Home() {
                     <span className="h-px flex-1 bg-brand-100" />
                     <span className="h-1.5 w-1.5 rounded-full bg-accent-500 opacity-0 transition group-hover:opacity-100" />
                   </div>
-                  <h3 className="mb-1.5 text-base font-extrabold text-brand-900">{service.title}</h3>
-                  <p className="text-xs leading-relaxed text-brand-900/65">{service.text}</p>
+                  <h3 className="mb-1.5 text-base font-extrabold text-brand-600">{service.title}</h3>
+                  <p className="text-xs leading-relaxed text-brand-700/80">{service.text}</p>
                 </div>
               ))}
             </div>
@@ -464,7 +464,7 @@ export default function Home() {
                     aria-pressed={active}
                     className={`rounded-xl px-4 py-2.5 text-xs font-extrabold transition sm:px-6 sm:text-sm ${
                       active
-                        ? "bg-accent-500 text-brand-950 shadow-lg shadow-brand-950/30"
+                        ? "bg-accent-500 text-brand-600 shadow-lg shadow-brand-950/30"
                         : "bg-white/10 text-white ring-1 ring-white/15 hover:bg-white/15"
                     }`}
                   >
@@ -475,10 +475,10 @@ export default function Home() {
             </div>
 
             <div className="mx-auto max-w-4xl rounded-3xl bg-white p-6 shadow-2xl shadow-brand-950/40 sm:p-8">
-              <h3 className="mb-5 border-b border-brand-100 pb-4 text-lg font-extrabold text-brand-800 sm:text-xl">
+              <h3 className="mb-5 border-b border-brand-100 pb-4 text-lg font-extrabold text-brand-600 sm:text-xl">
                 {meals[activeTab].title}
               </h3>
-              <div className="grid gap-3 text-sm text-brand-900/75 sm:grid-cols-2">
+              <div className="grid gap-3 text-sm text-brand-700 sm:grid-cols-2">
                 {meals[activeTab].items.map((item) => (
                   <div key={item} className="flex items-start gap-2.5 rounded-lg bg-brand-50/60 px-3 py-2">
                     <Check />
@@ -494,9 +494,9 @@ export default function Home() {
         <section id="letters" className="scroll-mt-24 bg-white py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto mb-14 max-w-3xl space-y-3 text-center">
-              <span className="text-xs font-bold uppercase tracking-wider text-accent-600">سجل التقدير والشكر</span>
-              <h2 className="text-3xl font-black text-brand-950 sm:text-4xl">شهادات وخطابات شكر وتقدير رسمية</h2>
-              <p className="text-sm text-brand-900/60">
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-500">سجل التقدير والشكر</span>
+              <h2 className="text-3xl font-black text-brand-600 sm:text-4xl">شهادات وخطابات شكر وتقدير رسمية</h2>
+              <p className="text-sm text-brand-600/85">
                 إشادات رفيعة من بعثات الحج والشركات الدولية تقديراً للأداء والالتزام:
               </p>
             </div>
@@ -508,9 +508,9 @@ export default function Home() {
                   className="group relative overflow-hidden rounded-2xl border border-brand-100 bg-white p-6 shadow-sm shadow-brand-900/5 transition hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
                 >
                   <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-l from-brand-600 to-accent-500 opacity-0 transition group-hover:opacity-100" />
-                  <span className="mb-2 block text-xs font-extrabold text-accent-600">{letter.from}</span>
-                  <h4 className="mb-2 text-base font-extrabold text-brand-950">{letter.title}</h4>
-                  <p className="text-xs leading-relaxed text-brand-900/65">{letter.text}</p>
+                  <span className="mb-2 block text-xs font-extrabold text-brand-500">{letter.from}</span>
+                  <h4 className="mb-2 text-base font-extrabold text-brand-600">{letter.title}</h4>
+                  <p className="text-xs leading-relaxed text-brand-700/80">{letter.text}</p>
                 </div>
               ))}
             </div>
@@ -521,8 +521,8 @@ export default function Home() {
         <section id="track-record" className="scroll-mt-24 border-t border-brand-100 bg-brand-50 py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto mb-12 max-w-3xl space-y-3 text-center">
-              <span className="text-xs font-bold uppercase tracking-wider text-accent-600">إحصائيات المواسم</span>
-              <h2 className="text-3xl font-black text-brand-950">سابقة أعمال موثقة بالأرقام</h2>
+              <span className="text-xs font-bold uppercase tracking-wider text-brand-500">إحصائيات المواسم</span>
+              <h2 className="text-3xl font-black text-brand-600">سابقة أعمال موثقة بالأرقام</h2>
             </div>
 
             <div className="grid gap-4 text-center sm:grid-cols-2 lg:grid-cols-4">
@@ -533,10 +533,10 @@ export default function Home() {
                 >
                   <span className="nums block text-3xl font-black text-brand-700">
                     {record.value}{" "}
-                    <span className="text-lg font-extrabold text-accent-600">{record.unit}</span>
+                    <span className="text-lg font-extrabold text-brand-500">{record.unit}</span>
                   </span>
-                  <span className="mt-2 block text-xs font-extrabold text-brand-950">{record.name}</span>
-                  <p className="mt-1.5 text-[11px] text-brand-900/55">{record.note}</p>
+                  <span className="mt-2 block text-xs font-extrabold text-brand-600">{record.name}</span>
+                  <p className="mt-1.5 text-[11px] text-brand-600/80">{record.note}</p>
                 </div>
               ))}
             </div>
@@ -568,7 +568,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-3 pt-2">
               <a
                 href="tel:+966596048533"
-                className="nums inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-brand-950 shadow-xl shadow-brand-950/30 transition hover:bg-accent-400 active:scale-[0.98]"
+                className="nums inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-brand-600 shadow-xl shadow-brand-950/30 transition hover:bg-accent-400 active:scale-[0.98]"
               >
                 اتصل بنا الآن
               </a>
