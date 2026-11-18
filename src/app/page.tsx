@@ -179,7 +179,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<Meal>("lunch");
 
   return (
-    <div className="min-h-screen bg-white text-brand-600 selection:bg-accent-500 selection:text-brand-600">
+    <div className="min-h-screen bg-white text-brand-600 selection:bg-accent-500 selection:text-white">
       {/* Top Banner */}
       <div className="bg-brand-800 text-brand-50">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-[11px] font-semibold sm:px-6 sm:text-xs lg:px-8">
@@ -248,7 +248,7 @@ export default function Home() {
           {/* Action CTA */}
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-5 py-2.5 text-sm font-extrabold text-brand-600 shadow-lg shadow-accent-500/25 transition hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-5 py-2.5 text-sm font-extrabold text-white shadow-lg shadow-accent-500/25 transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
           >
             <span className="hidden sm:inline">طلب عروض الكاترينج</span>
             <span className="sm:hidden">طلب عرض</span>
@@ -304,7 +304,7 @@ export default function Home() {
               <div className="flex flex-wrap justify-center gap-3 pt-2">
                 <a
                   href="#menus"
-                  className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-brand-600 shadow-xl shadow-accent-500/25 transition hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-white shadow-xl shadow-accent-500/25 transition hover:bg-accent-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 active:scale-[0.98]"
                 >
                   تصفح قوائم الطعام
                   <Arrow />
@@ -464,7 +464,7 @@ export default function Home() {
                     aria-pressed={active}
                     className={`rounded-xl px-4 py-2.5 text-xs font-extrabold transition sm:px-6 sm:text-sm ${
                       active
-                        ? "bg-accent-500 text-brand-600 shadow-lg shadow-brand-950/30"
+                        ? "bg-accent-500 text-white shadow-lg shadow-brand-950/30"
                         : "bg-white/10 text-white ring-1 ring-white/15 hover:bg-white/15"
                     }`}
                   >
@@ -568,7 +568,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-3 pt-2">
               <a
                 href="tel:+966596048533"
-                className="nums inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-brand-600 shadow-xl shadow-brand-950/30 transition hover:bg-accent-400 active:scale-[0.98]"
+                className="nums inline-flex items-center gap-2 rounded-xl bg-accent-500 px-7 py-3.5 text-sm font-extrabold text-white shadow-xl shadow-brand-950/30 transition hover:bg-accent-600 active:scale-[0.98]"
               >
                 اتصل بنا الآن
               </a>
