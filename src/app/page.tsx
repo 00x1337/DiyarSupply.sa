@@ -117,7 +117,7 @@ const letters = [
   },
   {
     from: "شركة مشارق المتميزة (ركين)",
-    title: "شكر وتقدير لمطبخ وائل رشيدي",
+    title: "شكر وتقدير لمطبخ تموين الديار",
     text: "خطاب شكر وتقدير من رئيس مجلس الإدارة والرئيس التنفيذي لشركة مشارق ركين على إنجاح موسم حج 1445هـ.",
   },
   {
@@ -289,7 +289,7 @@ export default function Home() {
               </h1>
 
               <p className="mx-auto max-w-3xl text-base leading-relaxed text-brand-700 sm:text-lg">
-                تأسست شركة وائل رشيدي لخدمات الإعاشة والتموين في المملكة منذ عام 2007م لتوفير أفضل الوجبات
+                تأسست شركة تموين الديار في المملكة منذ عام 2007م لتوفير أفضل الوجبات
                 المطهية والجافة وبوفيهات الـ VIP المفتوحة لبعثات الحج الرسمية والشركات والمناسبات الكبرى بمكة
                 المكرمة والمشاعر المقدسة.
               </p>
@@ -345,7 +345,7 @@ export default function Home() {
                   شغف بالضيافة واهتمام فائق بأدق تفاصيل الجودة
                 </h2>
                 <p className="text-sm leading-relaxed text-brand-700 sm:text-base">
-                  نحن شركة وائل رشيدي لخدمات الإعاشة بالحج والعمرة، نؤمن بأن الطعام ليس مجرد وجبة، بل تجربة
+                  نحن شركة تموين الديار لخدمات الإعاشة بالحج والعمرة، نؤمن بأن الطعام ليس مجرد وجبة، بل تجربة
                   متكاملة من النكهة والجودة والتقديم الراقي. تأسست شركتنا في المملكة العربية السعودية منذ عام
                   2007م لتقديم خدمات التغذية للحجاج والمعتمرين والمدارس والفعاليات الرسمية بمكة المكرمة
                   والمشاعر المقدسة.
@@ -595,13 +595,11 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-brand-950 py-8 text-center text-xs text-brand-200/60">
+      <footer className="bg-brand-950 py-10 text-center text-xs text-brand-200/60">
         <div className="mx-auto max-w-7xl px-4">
-          <span className="mx-auto mb-4 block h-0.5 w-16 rounded-full bg-accent-500" />
-          <p className="mb-1 font-extrabold text-brand-50">
-            شركة وائل رشيدي لخدمات الإعاشة والتموين (تموين الديار)
-          </p>
-          <p>جميع الحقوق محفوظة © {new Date().getFullYear()} • Wael Rasheedi Catering (WR Group)</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-light.png" alt="تموين الديار" className="mx-auto mb-4 h-10 w-auto sm:h-12" />
+          <p>جميع الحقوق محفوظة © {new Date().getFullYear()} • تموين الديار</p>
         </div>
       </footer>
     </div>
